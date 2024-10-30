@@ -1,0 +1,111 @@
+---
+title: The Command Line - Gimme more power!
+description: I decided to learn the command line in order to know how to really access remote servers, and to flex like a senior dev.
+date: "2024-10-30"
+---
+
+The command line is a powerful tool that can enhance your control and efficiency when interacting with your computer. Whether you're managing remote servers or navigating your own file system, command-line skills are invaluable. Here’s a beginner-friendly guide to what I’ve learned about the command line, including essential commands and tips for productive workflows.
+
+## Why Use the Command Line?
+
+The command line, often accessed via a **terminal**, is more than just a developer's tool:
+- **Greater Control**: Get direct access to system features, including powerful command-line tools.
+- **Speed & Efficiency**: Quickly execute commands without navigating through GUIs.
+- **Remote Server Access**: Use protocols like **ssh** to connect and manage headless or remote systems.
+- **Command-Line Tools**: Many tools only exist in the command line, such as `curl` or `grep`.
+- **Career Skills**: Proficiency with the command line can be a plus in tech fields.
+
+## Key Terminology
+
+### Terminal
+A **terminal** is software that allows you to type and execute commands. Originally a physical device, today it's software called a "terminal emulator." On Mac, the default is the **Terminal** app, though other options, like **iTerm2**, offer enhanced features.
+
+### Command Line
+The **command line** is the text interface provided by the terminal. Commands are typed here, and results are returned on-screen.
+
+### Shell
+The **shell** is the interpreter that processes commands. Different shells exist (e.g., **bash**, **zsh**), with **zsh** as the default on Mac. Windows uses **CMD** or **PowerShell**, but **Git Bash** or **WSL (Windows Subsystem for Linux)** offer Unix-based solutions for Windows.
+
+---
+
+## Basic Commands
+
+### Navigation
+- `pwd`: Print the current directory path.
+- `ls`: List files and folders in the current directory.
+  - `ls -a`: Includes hidden files.
+  - `ls -l`: Shows details in a long listing format.
+- `cd [directory]`: Change directory.
+  - `cd ~`: Go to home directory.
+  - `cd ..`: Move one directory up.
+  - `cd -`: Switch to the last directory.
+- `clear` or `ctrl + L`: Clear terminal screen.
+
+### File Management
+- `mkdir [directory-name]`: Create a new directory.
+- `touch [filename]`: Create a new file.
+- `rm [filename]`: Delete a file.
+  - `rm -r [directory]`: Delete a directory and its contents.
+- `cp [source] [destination]`: Copy files or directories.
+- `mv [source] [destination]`: Move or rename files or directories.
+
+### Viewing Files
+- `cat [filename]`: Display contents of a file.
+- `head [filename]`: Show the first 10 lines.
+  - `head -n [number] [filename]`: Show the first *n* lines.
+- `tail [filename]`: Display the last 10 lines.
+- `less [filename]`: View file content with the ability to scroll.
+
+---
+
+## Essential Shortcuts and Search Tips
+
+- **Command History**: 
+  - `history`: Show recent commands.
+  - `![number]`: Execute command from history by ID.
+- **Command Search**:
+  - `ctrl + R`: Search command history.
+  - `man [command]`: Show manual for command (e.g., `man ls`).
+  - `whoami`: Display the current user.
+  - `date`: Show the date and time.
+
+---
+
+## File Editing and Search Tools
+
+- **Text Editors**: Command-line text editors, like **vim** and **nano**, allow file editing directly in the terminal.
+- **Search within Files**:
+  - `grep [pattern] [filename]`: Find specific patterns or lines in files.
+- **File Finding**:
+  - `find [directory] -name [filename]`: Locate files by name in a specified directory.
+
+---
+
+## File Redirection and Piping
+
+- **Redirect Output**:
+  - `echo "text" > [filename]`: Write output to a file, overwriting its contents.
+  - `echo "text" >> [filename]`: Append output to a file.
+- **Piping**:
+  - Combine commands with `|` to pass the output of one command as input to another.
+
+## Advanced Topics: Symlinks, Compression, and More
+
+### Creating Symlinks
+- `ln -s [target-file] [symlink-name]`: Create a symbolic link (shortcut).
+  - `rm [symlink-name]`: Remove the symlink without affecting the target file.
+
+### File Compression
+- **Creating a tarball**:
+  - `tar -czvf [archive-name].tar.gz [directory]`: Compress a folder.
+  - `tar -xzvf [archive-name].tar.gz`: Extract the tarball contents.
+
+---
+
+## Final Thoughts
+
+The command line offers immense power and flexibility. It may feel challenging at first, but with practice, these commands will become second nature, improving your workflow and efficiency.
+
+For further notes, check my [Gist file](https://gist.github.com/ochudi/061028d011bbf16e42fdb461acd0ec1d).
+
+Happy coding and exploring the command line!
