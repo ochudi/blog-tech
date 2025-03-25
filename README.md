@@ -1,6 +1,3 @@
-Here’s a simple and clean README template for your private blog repo:
-
-```markdown
 # Chudi's Blog
 
 This is my personal blog where I document everything I learn in tech. Built with **Next.js 13** and styled using **Tailwind CSS**.
@@ -43,10 +40,3 @@ This is my personal blog where I document everything I learn in tech. Built with
 ## License
 
 This project is for personal use only and is not licensed for public distribution.
-
----
-
-*Happy coding!*
-```
-
-Let me know if there’s anything specific you’d like to add!
