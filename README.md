@@ -24,7 +24,7 @@ This is my personal blog where I document everything I learn in tech. Built with
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/ochudi/nextjs-contentlayer.git
+   git clone https://github.com/ochudi/blog-tech.git
    ```
 2. Install dependencies:
    ```bash
