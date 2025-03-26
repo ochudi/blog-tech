@@ -51,12 +51,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </Link>
                 <nav className="flex items-center gap-6 text-sm font-medium">
                   <Link
-                    href="/"
-                    className="hover:text-primary transition-colors"
-                  >
-                    Home
-                  </Link>
-                  <Link
                     href="/about"
                     className="hover:text-primary transition-colors"
                   >
